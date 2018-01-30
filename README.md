@@ -21,7 +21,7 @@ DZE_WaterSources_larges = ["Land_pumpa","MAP_pumpa","Land_Misc_Well_C_EP1","Land
 DZE_WaterSources_Special = ["Land_Misc_ConcBox_EP1"];
 DZE_wells = DZE_WaterSources_smalls + DZE_WaterSources_mediums + DZE_WaterSources_larges + DZE_WaterSources_Special;
  
- 4.In your custom compiles.sqf into if (!isDedicated) then { PASTE HERE: };
+4.In your custom compiles.sqf into if (!isDedicated) then { PASTE HERE: };
  
 player_fillWater = compile preprocessFileLineNumbers "dayz_code\compile\water_fill.sqf";
 
