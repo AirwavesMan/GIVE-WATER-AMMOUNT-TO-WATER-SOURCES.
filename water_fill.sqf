@@ -76,13 +76,6 @@ if (_drinking) then {
 _thirst = round(100 - (dayz_thirst / SleepWater) * 100);
 if (_thirst >= 99) exitWith {"You should not waste water, you are not dying of thirst." call dayz_rollingMessages;}; 
 
-if ((player getvariable ["needpiss",0] ==1)) exitWith {systemchat "i need go to the bathroom before drink again";};
-
-
-
-
-
-
 //Remove the amount and get the new amount
 _nearest_wells setvariable ["wateramount",_RemoveAmount,true];
 _NewWaterAmount = _nearest_wells getVariable "wateramount";
